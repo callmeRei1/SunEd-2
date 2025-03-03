@@ -1,0 +1,12 @@
+.news .news-title {
+    padding-bottom: 0;
+}
+.news .news-content{
+    padding-top: 0;
+}
+.news .news-content a{
+    text-decoration: none;
+}
+.news .news-content a:hover{
+    font-weight: 700;
+}
