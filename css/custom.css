@@ -1,4 +1,7 @@
 /* General */
+body{
+    overflow-x: hidden;
+}
     /* NAV */
     .navbar .navbar-collapse {
         display: flex;
@@ -25,8 +28,13 @@
     .news .news-content a:hover{
         font-weight: 700;
     }
-/* <= 321px */
+/* <= 375px */
 @media (max-width: 375px){
+    /* NAVBAR */
+    .navbar .navbar-brand img{
+        width: 6rem;
+        height: auto;
+    }
     /* CONTACT */
     .contact{
         width: 100vw;
@@ -43,7 +51,7 @@
         padding-right: 1rem;
     }
 }
-/* >= 321 */
+/* >= 375 */
 @media (min-width: 375px){
     /* CONTACT */
     .contact{
@@ -190,6 +198,10 @@
     /* NAV */
     .navbar .navbar-brand img{
         width: 8rem;
+    }
+    /* CAROUSEL */
+    .carousel h1 span{
+        font-family: hanzel,sans-serif;
     }
     /* NEWS */
     .news .news-content a{
