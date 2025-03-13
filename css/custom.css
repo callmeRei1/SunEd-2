@@ -73,6 +73,10 @@ body{
     }
 }
 @media (min-width: 425px){
+    /* NAV */
+    .navbar .navbar-brand img{
+        width: 8rem;
+    }
     /* NEWS */
     .news .news-content a{
         display: inline-block;
@@ -118,6 +122,10 @@ body{
 }
 /* <=770px */
 @media (min-width: 770px){
+    /* NAV */
+    .navbar .navbar-brand img{
+        width: 8rem;
+    }
     /* NEWS */
     .news .news-content a{
         display: inline-block;
@@ -155,6 +163,10 @@ body{
 }
 /* >=992px */
 @media (min-width: 992px) {
+    /* NAV */
+    .navbar .navbar-brand img{
+        width: 8rem;
+    }
     /* NEWS */
     .news .news-content a{
         display: inline-block;
