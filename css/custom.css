@@ -30,8 +30,32 @@
     .navbar .navbar-brand img{
         width: 6rem;
         height: auto;
+        margin-left: 1rem;
     }
-
+    .navbar button{
+        margin-right: 2rem;
+    }
+    /* CAROUSEL */
+    .carousel .col{
+        margin-left: 1rem;
+    }
+    .carousel h1{
+        font-family: hanzel, sans-serif;
+    }
+    .carousel p{
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: white;
+    }
+    .carousel .btn{
+        border-radius: 0.7rem;
+        padding: 0.4rem;
+        background-color: transparent;
+        border: white 1px solid;
+    }
+    .carousel a{
+        font-size: 0.5rem;
+    }
     /* CONTACT */
     .contact{
         width: 100vw;
@@ -74,6 +98,30 @@
     .navbar .navbar-brand img{
         width: 8rem;
     }
+    .navbar-toggler {
+        margin-right: 4rem;
+    }
+    /* CAROUSEL */
+    .carousel h1{
+        font-family:hanzel,sans-serif ;
+    }
+    .carousel p{
+        color: white;
+        font-size: 1.5rem;
+    }
+    .carousel .btn{
+        text-decoration: none;
+        color:white;
+        font-size:0.8rem;
+        font-weight: 700;
+        padding: 0.5rem;
+        border-radius: 0.8rem;
+        background-color: transparent;
+        border: 1px solid white;
+    }
+    .carousel i{
+        color: white;
+    }
     /* NEWS */
     .news .news-content a{
         display: inline-block;
@@ -115,6 +163,10 @@
     }
     .contact .contact-right textarea{
         font-size: 0.5rem;
+    }
+    /* footer */
+    footer{
+        width: 100vw;
     }
 }
 /* <=770px */
@@ -164,6 +216,23 @@
     .navbar .navbar-brand img{
         width: 8rem;
     }
+    .navbar .navbar-collapse {
+        display: flex;
+        justify-content: flex-end; 
+    }
+    /* CAROUSEL */
+    .carousel p{
+        color: black;
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+    .carousel .btn{
+        color: black;
+        border:1px black solid;
+    }
+    .carousel i{
+        color: black;
+    }
     /* NEWS */
     .news .news-content a{
         display: inline-block;
@@ -204,7 +273,6 @@
 }
 /* min 1024px */
 @media (min-width: 1024px) {
-    /* general */
     /* NAV */
     .navbar .navbar-brand img{
         width: 8rem;
@@ -212,6 +280,7 @@
     .navbar .navbar-collapse {
         display: flex;
         justify-content: flex-end; 
+        margin-right: 1rem;
     }
     /* CAROUSEL */
     .carousel h1 span{
