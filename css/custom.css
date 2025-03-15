@@ -2,11 +2,6 @@
 body{
     overflow-x: hidden;
 }
-    /* NAV */
-    .navbar .navbar-collapse {
-        display: flex;
-        justify-content: flex-end; 
-    }
     /* CONTACT */
     .contact .contact-right button{
         border: 0.5px black solid;
@@ -210,6 +205,10 @@ body{
     /* NAV */
     .navbar .navbar-brand img{
         width: 8rem;
+    }
+    .navbar .navbar-collapse {
+        display: flex;
+        justify-content: flex-end; 
     }
     /* CAROUSEL */
     .carousel h1 span{
