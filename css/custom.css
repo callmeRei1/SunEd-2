@@ -74,6 +74,40 @@
 }
 /* >= 375 */
 @media (min-width: 375px){
+    /* NAV */
+    .navbar .navbar-brand img{
+        width:6rem;
+        padding-left: 1rem;
+    }
+    .navbar button.navbar-toggler{
+        margin-right: 5rem;
+    }
+    /* CAROUSEL */
+    .carousel .col{
+        margin-left: 1rem;
+    }
+    .carousel h1{
+        font-family: hanzel,serif;
+    }
+    .carousel p{
+        color: white;
+        font-weight: 600;
+    }
+    .carousel .btn{
+        background-color: transparent;
+        border: none;
+        font-weight: 600;
+    }
+    .carousel .btn:hover {
+        text-decoration: underline;
+    }
+    /* SLOGAN */
+    .slogan h1{
+        padding-bottom:0.5rem;
+    }
+    .slogan h2{
+        padding-bottom: 1rem;
+    }
     /* CONTACT */
     .contact{
         width: 100vw;
@@ -112,12 +146,11 @@
     .carousel .btn{
         text-decoration: none;
         color:white;
-        font-size:0.8rem;
+        font-size:1rem;
         font-weight: 700;
         padding: 0.5rem;
         border-radius: 0.8rem;
         background-color: transparent;
-        border: 1px solid white;
     }
     .carousel i{
         color: white;
