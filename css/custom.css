@@ -286,6 +286,19 @@
     .carousel h1 span{
         font-family: hanzel,sans-serif;
     }   
+    .carousel .btn{
+        border: none;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .carousel .btn:hover{
+        font-size: 1.1rem;
+    }
+    /* SLOGAN */
+    .slogan h1{
+        font-weight: 700;
+        font-size: 3rem;
+    }
     /* NEWS */
     .news .news-content a{
         display: inline-block;
