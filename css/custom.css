@@ -306,6 +306,9 @@
 }
 /* min 1024px */
 @media (min-width: 1024px) {
+    *{
+        overflow-x: hidden;
+    }
     /* NAV */
     .navbar .navbar-brand img{
         width: 8rem;
