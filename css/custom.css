@@ -1,4 +1,7 @@
 /* General */
+*{
+    overflow-x: hidden;
+}
     /* CONTACT */
     .contact .contact-right button{
         border: 0.5px black solid;
@@ -306,9 +309,6 @@
 }
 /* min 1024px */
 @media (min-width: 1024px) {
-    *{
-        overflow-x: hidden;
-    }
     /* NAV */
     .navbar .navbar-brand img{
         width: 8rem;
