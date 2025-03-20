@@ -213,6 +213,13 @@
         height: 6rem;
         margin: 1rem 0;
     }
+    /* value */
+    .value .col-2{
+        padding-top: 1.5rem;
+    }
+    .value .col-3{
+        padding-top: 2rem;
+    }
     /* CONTACT */
     /* left */
     .contact .contact-left{
@@ -271,6 +278,13 @@
         height: 6rem;
         margin: 1rem 0;
     }
+        /* value */
+        .value .col-2{
+            padding-top: 10rem;
+        }
+        .value .col-3{
+            padding-top: 2rem;
+        }
     /* CONTACT */
     .contact .row{
         padding: 2rem 0;
