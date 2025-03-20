@@ -1,14 +1,10 @@
 /* general */
-*{
-    overflow-x:hidden ;
-}
 @media (min-width:320px) and (max-width: 375px){
     /* CAROUSEL */
     .carousel h2{
         color: white;
         font-size: 3rem;
     }
-    /* SLOGAN */
     /* NEWS */
     .news .blog-col img{
         width: 18rem;
@@ -68,6 +64,10 @@
         margin-top: 1rem;
         text-align: center;
     }
+    .news .blog-col a{
+        display: block;
+        height: 4.5rem;
+    }
 }
 /* 576 <= x <768 */
 @media (min-width: 576px) and (max-width: 768px){
@@ -88,6 +88,10 @@
     .news {
         margin-top: 1rem;
     }
+    .news .blog-col a{
+        display: block;
+        height: 4.5rem;
+    }
 }
 /* 768<= x <992*/
 @media (min-width: 768px) and (max-width: 992px){
@@ -103,6 +107,10 @@
     .news {
         margin-top: 1rem;
     }
+    .news .blog-col a{
+        display: block;
+        height: 4.5rem;
+    }
 }
 /* 992<= x <1024 */
 @media (min-width: 992px) and (max-width: 1024px){
@@ -113,6 +121,10 @@
     }
     .news {
         margin-top: 1rem;
+    }
+    .news .blog-col a{
+        display: block;
+        height: 4.5rem;
     }
 }
 /* 1024<= x <1200 */
@@ -125,16 +137,24 @@
     .news {
         margin-top: 1rem;
     }
+    .news .blog-col a{
+        display: block;
+        height: 4.5rem;
+    }
 }
 /* x >= 1200 */
 @media (min-width: 1200px) {
 
     /* NEWS */
     .news .blog-col img{
-        width: 20rem;
+        width: 26rem;
         height: 13rem;
     }
     .news {
         margin-top: 1rem;
+    }
+    .news .blog-col a{
+        display: block;
+        height: 4.5rem;
     }
 }
