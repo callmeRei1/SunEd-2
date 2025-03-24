@@ -240,15 +240,15 @@
             <div class="row py-vh-5 d-flex align-items-center news-content" style="text-align: center;">
               <div class="col-md-4" data-aos="fade-up">
                 <img src="img/img_Sune/news/blogs/blog1-1.avif" class="img-fluid rounded shadow" alt="nice gallery image">
-                <a href="">Education sector focuses on reform and innovation for the upcoming academic year</a>
+                <a href="/blog-1.html">Education sector focuses on reform and innovation for the upcoming academic year</a>
               </div>
               <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                 <img src="img/img_Sune/news/blogs/blog2-1.png" class="img-fluid rounded shadow" alt="nice gallery image">
-                <a href="">Summary of the 2023-2024 school year for secondary education ...</a>
+                <a href="/blog-2.html">Summary of the 2023-2024 school year for secondary education ...</a>
               </div>
               <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
                 <img src="img/img_Sune/news/blogs/blog3-1.avif" class="img-fluid rounded shadow" alt="nice gallery image">
-                <a href="">Making English Vietnam's second language: A challenging but necessary task </a>
+                <a href="/blog-3.html">Making English Vietnam's second language: A challenging but necessary task </a>
               </div>
             </div>
             </div>
@@ -285,19 +285,19 @@
                   <form data-aos="fade-left" data-aos-delay="500">
                       <div class="mb-3">
                           <label class="form-label">First Name *</label>
-                          <input type="text" class="form-control" required="">
+                          <input type="text" class="form-control" id="firstName" name="firstName" required="">
                       </div>
                       <div class="mb-3">
                           <label class="form-label">Last Name *</label>
-                          <input type="text" class="form-control" required="">
+                          <input type="text" class="form-control" id="lastName" name="lastName" required="">
                       </div>
                       <div class="mb-3">
                           <label class="form-label">Email *</label>
-                          <input type="email" class="form-control" required="">
+                          <input type="email" class="form-control" id="email" name="email" required="">
                       </div>
                       <div class="mb-3">
                           <label class="form-label">Message</label>
-                          <textarea class="form-control" rows="3">This is a message</textarea>
+                          <textarea class="form-control" rows="3" id="message" name="message"></textarea>>This is a message</textarea>
                       </div>
                       <button type="submit" class="btn btn-custom w-100">Send</button>
                   </form>
@@ -366,7 +366,7 @@
       duration: 800, // values from 0 to 3000, with step 50ms
     });
   </script>
-
+<!-- js scroll navbar -->
   <script>
     let scrollpos = window.scrollY
     const header = document.querySelector(".navbar")
@@ -384,6 +384,28 @@
       console.log(scrollpos)
     })
   </script>
+<!-- contact form js -->
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const formData = {
+          firstName: document.getElementById("firstName").value,
+          lastName: document.getElementById("lastName").value,
+          email: document.getElementById("email").value,
+          message: document.getElementById("message").value
+      };
+
+      fetch("http://your-backend.com/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+      })
+      .then(response => response.json())
+      .then(data => alert("Gửi thành công!"))
+      .catch(error => console.error("Lỗi:", error));
+  });
+</script>
 
 </body>
 
